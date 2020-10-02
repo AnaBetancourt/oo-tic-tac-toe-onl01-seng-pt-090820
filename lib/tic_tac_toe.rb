@@ -52,7 +52,7 @@ class TicTacToe
       true
     end
   end
-  
+
   def turn_count 
     turn_number = @board.count{|element| element != " "}
     turn_number
@@ -61,7 +61,6 @@ class TicTacToe
   def current_player
     self.turn_count % 2 == 0 ? "X" : "O"
   end
-
 
   def turn
     puts "Please specify a position between 1 and 9."
