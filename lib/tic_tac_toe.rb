@@ -78,9 +78,9 @@ class TicTacToe
     
   def won? 
     WIN_COMBINATIONS.find do |winner_array|
-      if @board[winner_array[0..2]] == "X" && @board[winner_array[1]] == "X" && @board[winner_array[2]] == "X"
+      if @board[winner_array[0..2]] == "X"
         winner_array
-      elsif @board[winner_array[0]] == "O" && @board[winner_array[1]] == "O" && @board[winner_array[2]] == "O"
+      elsif @board[winner_array[0..2]] == "O" 
         winner_array
       else 
         false
